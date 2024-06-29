@@ -1,19 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="40px"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="130dp"
+        android:background="@drawable/loggg"
+        />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#000000"
+        android:text="Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:id="@+id/name"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Friend's name"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter yout friend's name"
+        android:id="@+id/frndname"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/baseline_people_alt_24"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Friend nickname"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your friend's nickname"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/baseline_people_outline_24"
+        android:id="@+id/frndnickname"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Description"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter description of your friend"
+        android:id="@+id/descripfrnd"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/baseline_description_24"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:background="#123192"
+        android:id="@+id/addbtn"
+        android:layout_margin="20px"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
