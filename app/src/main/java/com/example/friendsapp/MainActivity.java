@@ -78,19 +78,19 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
                 );
-
-                b2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent i=new Intent(getApplicationContext(), ViewFriends.class);
-                        startActivity(i);
-                    }
-                });
-
                 //Request queue
                RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
                requestQueue.add(jsonObjectRequest);
 
+
+
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(getApplicationContext(),ViewFriends.class);
+                startActivity(i);
             }
         });
     }
