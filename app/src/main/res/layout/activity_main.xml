@@ -76,5 +76,14 @@
         android:id="@+id/addbtn"
         android:layout_margin="20px"
         />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW ALL Entries"
+        android:textColor="#FFFFFF"
+        android:background="#123192"
+        android:id="@+id/viewallbtn"
+        android:layout_margin="20px"
+        />
 
 </LinearLayout>

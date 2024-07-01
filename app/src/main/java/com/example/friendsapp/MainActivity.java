@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         ed3 = (EditText) findViewById(R.id.frndnickname);
         ed4 = (EditText) findViewById(R.id.descripfrnd);
         b1 = (AppCompatButton) findViewById(R.id.addbtn);
+        b2=(AppCompatButton) findViewById(R.id.viewallbtn);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +78,14 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
                 );
+
+                b2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent i=new Intent(getApplicationContext(), ViewFriends.class);
+                        startActivity(i);
+                    }
+                });
 
                 //Request queue
                RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
